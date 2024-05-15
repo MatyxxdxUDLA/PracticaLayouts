@@ -22,7 +22,9 @@
                AbsoluteLayout.LayoutFlags="PositionProportional" />
             <Button
                 x:Name="CounterBtn"
-                Text="Ir a Home" 
+                Text="Ir a Home"
+                AbsoluteLayout.LayoutBounds="1,1,100,50"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
                 SemanticProperties.Hint="Se dirige a Home"
                 Clicked="GoToHomeButton"
                 />
