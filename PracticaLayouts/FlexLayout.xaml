@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticaLayouts.FlexLayout"
+             Title="FlexLayout">
+    <ScrollView>
+        <FlexLayout Direction="Column">
+
+            <!-- Header -->
+            <Label Text="HEADER"
+                   FontSize="18"
+                   BackgroundColor="Aqua"
+                   HorizontalTextAlignment="Center" />
+
+            <!-- Body -->
+            <FlexLayout FlexLayout.Grow="1" Direction="Column">
+
+                <!-- Item 1 -->
+                <FlexLayout Direction="Row" Margin="5">
+                    <Image Source="https://s3-ap-south-1.amazonaws.com/trt-blog-ghost/2020/03/65.png" WidthRequest="50" HeightRequest="50" />
+                    <Label Text="ITEM 1" VerticalOptions="Center" Margin="10,0,0,0" />
+                </FlexLayout>
+
+                <!-- Item 2 -->
+                <FlexLayout Direction="Row" Margin="5">
+                    <Image Source="https://i.stack.imgur.com/bl2Wp.png" WidthRequest="50" HeightRequest="50" />
+                    <Label Text="ITEM 2" VerticalOptions="Center" Margin="10,0,0,0" />
+                </FlexLayout>
+
+                <FlexLayout Direction="Row" Margin="5">
+                    <Image Source="https://cms-assets.tutsplus.com/cdn-cgi/image/width=600/uploads/users/30/posts/19449/image/flexbox-main.png" WidthRequest="50" HeightRequest="50" />
+                    <Label Text="ITEM 2" VerticalOptions="Center" Margin="10,0,0,0" />
+                </FlexLayout>
+
+                <!-- Add more items as needed -->
+
+            </FlexLayout>
+
+            <!-- Footer -->
+            <Label Text="FOOTER"
+                   FontSize="18"
+                   BackgroundColor="Pink"
+                   HorizontalTextAlignment="Center" />
+            <Button x:Name="CounterBtn"
+                    Text="Ir a Absolute Layout" 
+                    SemanticProperties.Hint="Se dirige a AbsoluteLayout"
+                    Clicked="GoToAbsoluteLayoutButton" />
+        </FlexLayout>
+    </ScrollView>
+    
+</ContentPage>

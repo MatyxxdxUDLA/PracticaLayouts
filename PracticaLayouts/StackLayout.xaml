@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticaLayouts.StackLayout"
+             Title="StackLayout">
+    <ScrollView>
+        <StackLayout Margin="20"
+                     Orientation="Vertical"
+                     HorizontalOptions="Center">
+            <Label Text="Texto 1 tamaño 1"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   FontSize="Title"
+                   HeightRequest="100"/>
+            <Label Text="Texto 2 tamaño 2"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   FontSize="Subtitle"
+                   HeightRequest="100"/>
+            <Label Text="Texto 3 tamaño 3"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   FontSize="Small"
+                   HeightRequest="100"/>
+            <Button
+                x:Name="CounterBtn"
+                Text="Ir a FlexLayout" 
+                SemanticProperties.Hint="Se dirige a Flex Layout"
+                Clicked="GoToFlexLayoutButton"
+                HorizontalOptions="Fill"
+                HeightRequest="100"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
